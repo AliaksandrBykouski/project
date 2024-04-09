@@ -1,28 +1,23 @@
 "use strict";
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+const str = "tEst";
+console.log(str.length);
+console.log(str.toUpperCase());
+console.log(str.toLocaleLowerCase());
 
-const personalMovieBD = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
+let fruit = "Some fruit";
 
+console.log(fruit.indexOf("i"));
 
+const logg = "Hello world";
 
-for (let i = 0; i < 2; i++) {
-    const a = prompt('Один из последних просмотренных фильмов?', ''),
-          b = prompt('На сколько оцените его?', '');
+console.log(logg.slice(6));
 
-    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-        personalMovieDB.movies[a] = b;
-        console.log('done');
-    } else {
-        console.log('error');
-        i--;
-    }
-}
+console.log(logg.substring(6, 11));
 
-console.log(personalMovieBD);
+console.log(logg.substr(6, 5));
+
+const num = 12.33;
+console.log(Math.round(num));
+
+const test = 12.23
